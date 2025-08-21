@@ -14,8 +14,8 @@ local Library = {
     drag_position = nil;
     start_position = nil;
 }
-if not isfolder("Argon Hub X") then
-    makefolder("Argon Hub X")
+if not isfolder("Essence Hub X") then
+    makefolder("Essence Hub X")
 end
 function Library:disconnect()
 	for _, value in Library.connections do
@@ -28,7 +28,7 @@ function Library:disconnect()
 end
 function Library:clear()
 	for _, object in CoreGui:GetChildren() do
-		if object.Name ~= "Argon Hub X" then
+		if object.Name ~= "Essence Hub X" then
 			continue
 		end
 		object:Destroy()
@@ -43,18 +43,18 @@ function Library:save_flags()
     if not Library.exist() then return end
     local success, result = pcall(function()
         local flags = HttpService:JSONEncode(Library.Flags)
-        writefile(`Argon Hub X/{game.GameId}.lua`, flags)
+        writefile(`Essence Hub X/{game.GameId}.lua`, flags)
     end)
 end
 
 function Library:load_flags()
     local success, result = pcall(function()
-        if not isfile(`Argon Hub X/{game.GameId}.lua`) then
+        if not isfile(`Essence Hub X/{game.GameId}.lua`) then
             Library.save_flags()
             return
         end
 
-        local flags = readfile(`Argon Hub X/{game.GameId}.lua`)
+        local flags = readfile(`Essence Hub X/{game.GameId}.lua`)
         if not flags then
             Library.save_flags()
             return
@@ -122,7 +122,7 @@ function Library:visible()
 end
 function Library.__init()
 	local container = Instance.new("ScreenGui")
-	container.Name = "Argon Hub X"
+	container.Name = "Essence Hub X"
     container.Parent = CoreGui
     Library.core = container
 	local Shadow = Instance.new("ImageLabel")
@@ -186,7 +186,7 @@ function Library.__init()
 	TextLabel.Position = UDim2.new(0.0938254446, 0, 0.496794879, 0)
 	TextLabel.Size = UDim2.new(0, 75, 0, 16)
 	TextLabel.FontFace = Font.new("rbxasset://fonts/families/Montserrat.json", Enum.FontWeight.SemiBold)
-	TextLabel.Text = 'Argon Hub X'
+	TextLabel.Text = 'Essence Hub X'
 	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 	TextLabel.TextScaled = true
 	TextLabel.TextSize = 14.000
