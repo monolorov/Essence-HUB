@@ -211,7 +211,7 @@ S9_.Unloaded = false
 
 function S9_:MakeNotify(S65_arg0)
 	local S66_ = S65_arg0 or {}
-	S66_.Title = S66_.Title or "ArgonHubX"
+	S66_.Title = S66_.Title or "EssenceHubX"
 	S66_.Description = S66_.Description or "Notification"
 	S66_.Content = S66_.Content or "Content"
 	S66_.Color = S66_.Color or Color3.fromRGB(255, 0, 0)
@@ -467,7 +467,7 @@ function S9_:MakeGui(S91_arg0)
 	local S120_ = Instance.new("UIPageLayout");
 
 	S94_.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-	S94_.Name = "ArgonHubXGui"
+	S94_.Name = "EssenceHubXGui"
 	S94_.Parent = S4_:IsStudio() and S3_.PlayerGui or (gethui() or cloneref(game:GetService("CoreGui")) or game:GetService("CoreGui"))
 
 	S95_.BackgroundTransparency = 1
