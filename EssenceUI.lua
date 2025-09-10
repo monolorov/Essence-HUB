@@ -583,7 +583,7 @@ function Library:create_ui()
     ClientName.FontFace = Font.new('rbxasset://fonts/families/GothamSSm.json', Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
     ClientName.TextColor3 = Color3.fromRGB(255, 0, 50)
     ClientName.TextTransparency = 0.20000000298023224
-    ClientName.Text = 'DYHUB'
+    ClientName.Text = 'Essence'
     ClientName.Name = 'ClientName'
     ClientName.Size = UDim2.new(0, 31, 0, 13)
     ClientName.AnchorPoint = Vector2.new(0, 0.5)
@@ -1049,7 +1049,7 @@ function Library:create_ui()
             ModuleName.TextColor3 = Color3.fromRGB(255, 0, 70)
             ModuleName.TextTransparency = 0.20000000298023224
             if not settings.rich then
-                ModuleName.Text = settings.title or "DYHUB-2"
+                ModuleName.Text = settings.title or "Essence-2"
             else
                 ModuleName.RichText = true
                 ModuleName.Text = settings.richtext or "<font color='rgb(255,0,0)'>March</font> user"
@@ -1397,7 +1397,7 @@ function Library:create_ui()
                 Body.TextColor3 = Color3.fromRGB(180, 180, 180)
                 
                 if not settings.rich then
-                    Body.Text = settings.text or "DYHUB-1"
+                    Body.Text = settings.text or "Essence-1"
                 else
                     Body.RichText = true
                     Body.Text = settings.richtext or "<font color='rgb(255,0,0)'>March</font> user"
@@ -1467,7 +1467,7 @@ function Library:create_ui()
                 Body.TextColor3 = Color3.fromRGB(180, 180, 180)
             
                 if not settings.rich then
-                    Body.Text = settings.text or "DYHUB-1" -- Default text
+                    Body.Text = settings.text or "Essence-1" -- Default text
                 else
                     Body.RichText = true
                     Body.Text = settings.richtext or "<font color='rgb(255,0,0)'>March</font> user" -- Default rich text
@@ -1498,7 +1498,7 @@ function Library:create_ui()
 
                 function TextManager:Set(new_settings)
                     if not new_settings.rich then
-                        Body.Text = new_settings.text or "DYHUB-1" -- Default text
+                        Body.Text = new_settings.text or "Essence-1" -- Default text
                     else
                         Body.RichText = true
                         Body.Text = new_settings.richtext or "<font color='rgb(255,0,0)'>March</font> user" -- Default rich text
@@ -2648,3 +2648,4 @@ function Library:create_ui()
 end
 
 return Library
+
